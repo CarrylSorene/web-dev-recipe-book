@@ -1,3 +1,3 @@
-// (function($) {
-//   $('#slideshow').cycle({fx: 'fade'});
-// })(jQuery);
+(function($) {
+  $('#slideshow').cycle({fx: 'fade'});
+})(jQuery);
