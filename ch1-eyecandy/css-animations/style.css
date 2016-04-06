@@ -10,6 +10,7 @@ body {
   height: 150px;
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #banner img.logo {
@@ -23,4 +24,13 @@ body {
   width: 15px;
   background: rgba(255,255,255,0.5);
   float: left;
+  position: absolute;
+  left: -100px;
+  top: -25px;
+  box-shadow: 0 0 20px #FFF;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  transition: left 2s ease-in-out;
 }
+
+#banner.loaded .sheen { left: 900px; }
