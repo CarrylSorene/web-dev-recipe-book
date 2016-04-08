@@ -1,4 +1,4 @@
-(function($){
+// (function($){
   var $definitions = $('.definition');
   $definitions.find('.tooltip').attr('aria-hidden', 'true');
 
@@ -12,4 +12,4 @@ function hideTip() {
 
 $definitions.on('mouseover focusin', showTip);
 $definitions.on('mouseout focusout', hideTip);
-})(jQuery);
+// })(jQuery);
