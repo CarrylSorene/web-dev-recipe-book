@@ -9,3 +9,12 @@ function createTabs($container, childSelector) {
   $container.prepend($list);
 }
 
+function createTab($container, $content, childSelector) {
+  var tabTitle, $newTab;
+  tabTitle = $content.data('tab-title');
+  $newTab = $('<li>').addClass('tab').html(tabTitle);
+  $newTab.on('click', function() {
+    switchTab($container, $(this), $content, childSelector);
+  });
+  return $newTab;
+}
