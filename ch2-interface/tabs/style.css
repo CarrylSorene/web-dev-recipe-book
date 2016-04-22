@@ -26,3 +26,13 @@ ul.tabs {
   top: 0;
 }
 
+div.languages {
+  background-color: #000;
+  border: 5px solid #DDD;
+  color: #DDD;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 10px
+  padding-top: 30px;
+  position: relative;
+}
