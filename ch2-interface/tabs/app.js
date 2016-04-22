@@ -18,3 +18,12 @@ function createTab($container, $content, childSelector) {
   });
   return $newTab;
 }
+
+//first hide everything, then show selected tab
+function switchTab($container, $tab, $content, childSelector) {
+$container.find('childSelector').hide();
+$container.find('ul.tabs > li').removeClass('selected');
+
+$content.slideDown('fast');
+$tab.addClass('selected');
+}
