@@ -27,3 +27,27 @@ $container.find('ul.tabs > li').removeClass('selected');
 $content.slideDown('fast');
 $tab.addClass('selected');
 }
+
+//iterate over containers to add tabs separately - show only first tab when page loads
+function initTabs($containers, childSelector) {
+  $containers.each(function() {
+    var $div, $firstTab;
+    $div = $(this);
+    createTabs($div, childSelector);
+    $firstTab = $div.find('ul.tabs > li').first();
+    switchTab($div, $firstTab, $div.find(childSelector).first(), childSelector);
+  });
+}
+
+initTabs($('div.languages'), 'div.language');
+
+
+
+
+
+
+
+
+
+
+
