@@ -13,3 +13,16 @@ li.tab {
   width: 80px;
 }
 
+li.tab.selected { background-color: #AAA; }
+
+ul.tabs {
+  font-size: 12px;
+  line-height: 1;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20;
+  top: 0;
+}
+
